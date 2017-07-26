@@ -109,7 +109,7 @@ var check_params = function (params) {
         }
 
         if(params.vargs.files.indexOf(params.vargs.pom)==-1) {
-          params.vargs.files.push(params.vargs.pom);
+          // params.vargs.files.push(params.vargs.pom);
         }
 
         return resolve(params);
@@ -129,12 +129,12 @@ var get_checksums = function(file){
      var stream = fs.createReadStream(file),
          md5 = crypto.createHash('md5'),
          sha1 = crypto.createHash('sha1');
- 
+
      stream.on('data', function(data) {
        md5.update(data, 'utf8');
        sha1.update(data, 'utf8');
      });
- 
+
      stream.on('end', function() {
        resolve({
          md5: md5.digest('hex'),
