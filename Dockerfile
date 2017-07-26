@@ -1,5 +1,7 @@
 FROM alpine:3.3
 
+MAINTAINER ganeshksankar ganeshksankar@gmail.com
+
 RUN apk update && \
   apk add \
     ca-certificates \

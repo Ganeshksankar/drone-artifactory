@@ -1,25 +1,25 @@
 {
   "name": "drone-artifactory",
   "version": "1.0.0",
-  "description": "Drone plugin to publish files and artifacts to Artifactory",
+  "description": "Drone plugin to publish files and artifacts to Artifactory without pom",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/gulp/bin/gulp.js default"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/drone-plugins/drone-artifactory.git"
+    "url": "https://github.com/ganeshksankar/drone-artifactory.git"
   },
   "keywords": [
     "drone",
     "artifactory"
   ],
-  "author": "Aurélien Thieriot",
+  "author": "Ganesh Kumar",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/drone-plugins/drone-artifactory/issues"
+    "url": "https://github.com/ganeshksankar/drone-artifactory/issues"
   },
-  "homepage": "https://github.com/drone-plugins/drone-artifactory#README.md",
+  "homepage": "https://github.com/ganeshksankar/drone-artifactory#README.md",
   "dependencies": {
     "artifactory-api": "0.0.3",
     "btoa": "^1.1.2",
