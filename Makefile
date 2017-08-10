@@ -1,6 +1,6 @@
 .PHONY: all install test docker
 
-IMAGE ?= ganeshksankar/drone-artifactory
+IMAGE ?= ganeshksankar/drone-artifactory:1
 
 all: install test
 

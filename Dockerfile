@@ -13,6 +13,7 @@ WORKDIR /node
 ADD package.json /node/
 RUN npm install --production
 
+ADD ArtifactoryAPI.js /node/
 ADD index.js /node/
 
 ENTRYPOINT ["node", "/node/index.js"]
